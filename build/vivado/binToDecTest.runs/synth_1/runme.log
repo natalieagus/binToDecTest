@@ -1,0 +1,349 @@
+
+*** Running vivado
+    with args -log MI_alchitryTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MI_alchitryTop.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source MI_alchitryTop.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2594.785 ; gain = 28.000 ; free physical = 2013 ; free virtual = 12055
+Command: synth_design -top MI_alchitryTop -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 44217
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3371.383 ; gain = 403.207 ; free physical = 758 ; free virtual = 10796
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MI_alchitryTop' [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_alchitryTop.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'MI_resetConditioner_7ee16669' [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_resetConditioner_7ee16669.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'MI_resetConditioner_7ee16669' (0#1) [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_resetConditioner_7ee16669.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'MI_multiSevenSeg_70303e7f' [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_multiSevenSeg_70303e7f.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'MI_counter_2756ca9f' [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_counter_2756ca9f.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'MI_counter_2756ca9f' (0#1) [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_counter_2756ca9f.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'MI_sevenSeg' [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_sevenSeg.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'MI_sevenSeg' (0#1) [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_sevenSeg.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'MI_decoder_f702a396' [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_decoder_f702a396.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'MI_decoder_f702a396' (0#1) [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_decoder_f702a396.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'MI_multiSevenSeg_70303e7f' (0#1) [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_multiSevenSeg_70303e7f.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'MI_binToDec_258523be' [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_binToDec_258523be.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'MI_binToDec_258523be' (0#1) [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_binToDec_258523be.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'MI_binToDecV1_258523be' [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_binToDecV1_258523be.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'MI_binToDecV1_258523be' (0#1) [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_binToDecV1_258523be.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'MI_alchitryTop' (0#1) [/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.srcs/sources_1/imports/source/MI_alchitryTop.sv:6]
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[7] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[6] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[5] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[4] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[3] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[2] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[1] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[0] driven by constant 0
+WARNING: [Synth 8-7129] Port P_value[13] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[12] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[11] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[10] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[9] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[8] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[7] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[6] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[5] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[4] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[3] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[2] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[1] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[0] in module MI_binToDecV1_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[13] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[12] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[11] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[10] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[9] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[8] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[7] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[6] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[5] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[4] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[3] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[2] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[1] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_value[0] in module MI_binToDec_258523be is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioButton[4] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioButton[3] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioButton[2] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioButton[1] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioButton[0] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[23] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[22] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[21] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[20] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[19] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[18] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[17] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[16] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[15] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[14] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[13] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[12] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[11] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[10] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[9] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[8] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[7] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[6] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[5] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[4] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[3] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[2] in module MI_alchitryTop is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3449.250 ; gain = 481.074 ; free physical = 671 ; free virtual = 10709
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3467.262 ; gain = 499.086 ; free physical = 659 ; free virtual = 10698
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3467.262 ; gain = 499.086 ; free physical = 659 ; free virtual = 10698
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3467.926 ; gain = 0.062 ; free physical = 659 ; free virtual = 10697
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/share/Alchitry/binToDecTest/build/constraint/alchitry.xdc]
+Finished Parsing XDC File [/media/share/Alchitry/binToDecTest/build/constraint/alchitry.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/share/Alchitry/binToDecTest/build/constraint/alchitry.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MI_alchitryTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MI_alchitryTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3604.270 ; gain = 0.000 ; free physical = 554 ; free virtual = 10593
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3606.496 ; gain = 0.000 ; free physical = 556 ; free virtual = 10594
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3606.496 ; gain = 638.320 ; free physical = 535 ; free virtual = 10579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3606.496 ; gain = 638.320 ; free physical = 535 ; free virtual = 10579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3606.496 ; gain = 638.320 ; free physical = 535 ; free virtual = 10579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3606.496 ; gain = 638.320 ; free physical = 535 ; free virtual = 10574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[7] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[6] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[5] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[4] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[3] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[2] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[1] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_led[0] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[23] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[22] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[21] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[20] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[18] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[15] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[14] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[13] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[12] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[10] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[7] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[6] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[5] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[4] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioLed[2] driven by constant 0
+WARNING: [Synth 8-3917] design MI_alchitryTop has port P_ioSeg[7] driven by constant 1
+WARNING: [Synth 8-7129] Port P_ioButton[4] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioButton[3] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioButton[2] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioButton[1] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioButton[0] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[23] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[22] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[21] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[20] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[19] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[18] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[17] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[16] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[15] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[14] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[13] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[12] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[11] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[10] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[9] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[8] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[7] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[6] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[5] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[4] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[3] in module MI_alchitryTop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P_ioDip[2] in module MI_alchitryTop is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3606.496 ; gain = 638.320 ; free physical = 526 ; free virtual = 10568
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3633.922 ; gain = 665.746 ; free physical = 426 ; free virtual = 10469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3634.211 ; gain = 666.035 ; free physical = 421 ; free virtual = 10464
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3634.387 ; gain = 666.211 ; free physical = 421 ; free virtual = 10464
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3634.531 ; gain = 666.355 ; free physical = 415 ; free virtual = 10465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3634.547 ; gain = 666.371 ; free physical = 415 ; free virtual = 10465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3634.605 ; gain = 666.430 ; free physical = 410 ; free virtual = 10461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3634.609 ; gain = 666.434 ; free physical = 410 ; free virtual = 10461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3634.633 ; gain = 666.457 ; free physical = 410 ; free virtual = 10461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3634.637 ; gain = 666.461 ; free physical = 410 ; free virtual = 10461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     2|
+|4     |LUT2   |     5|
+|5     |LUT4   |     6|
+|6     |LUT6   |     3|
+|7     |FDRE   |    18|
+|8     |FDSE   |     4|
+|9     |IBUF   |     5|
+|10    |OBUF   |    45|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3634.668 ; gain = 666.492 ; free physical = 410 ; free virtual = 10461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3634.707 ; gain = 527.293 ; free physical = 410 ; free virtual = 10460
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3634.719 ; gain = 666.531 ; free physical = 412 ; free virtual = 10462
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3634.836 ; gain = 0.008 ; free physical = 406 ; free virtual = 10456
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3668.445 ; gain = 0.000 ; free physical = 899 ; free virtual = 10944
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8d50a34f
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 3668.445 ; gain = 1073.395 ; free physical = 896 ; free virtual = 10941
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2364.932; main = 1870.725; forked = 494.505
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5795.758; main = 3633.801; forked = 2164.230
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3668.445 ; gain = 0.000 ; free physical = 896 ; free virtual = 10941
+INFO: [Common 17-1381] The checkpoint '/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.runs/synth_1/MI_alchitryTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MI_alchitryTop_utilization_synth.rpt -pb MI_alchitryTop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 21 00:55:46 2024...
