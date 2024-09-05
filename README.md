@@ -1,16 +1,15 @@
-# Test Repo for binToDec LucidV2 Module 
+# Test Repo for binToDec LucidV2 Module
 
-Partially works in simulation:
-1. Upon run, display 4321 in 7seg 
-2. If ioDip[0][0] is up, shows nothing (should've shown 5)
-3. If ioDip[0][1] is up, shows 7 (expected behavior)
+Works fully in simulation:
 
-In hardware (Alchitry Au):
-1. Upon run, display 4321 in 7 seg (expected)
-2. If ioDip[0][0] is up, shows nothing (should've shown 5)
-3. If ioDip[0][1] is up, shows nothing (should've shown 7 like in simulation)
+1. Upon run, display 4321 in 7seg
+2. If ioDip[0][0] is up, shows 5
+3. If ioDip[0][1] is up, shows 7
 
+When trying to compile:
 
-Tested on AlchitryLabv2 2.0.12 using Vivado 2023.2. 
+Error shows up about `binToDec.digits` parameter:
 
+![alt](/images/README/2024-09-05-17-03-50.png)
 
+Tested on AlchitryLabv2 2.0.13 commit: [34e21f28143294ec147b6cb81116e0c49c3a08e2](34e21f28143294ec147b6cb81116e0c49c3a08e2) using Vivado 2023.2.
