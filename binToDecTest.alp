@@ -1,6 +1,6 @@
 {
     "project": {
-        "type": "V1.0",
+        "type": "V1.1",
         "projectName": "binToDecTest",
         "board": "Alchitry Au",
         "sourceFiles": [
@@ -46,12 +46,6 @@
                     "type": "Component",
                     "path": "Miscellaneous/decoder.luc"
                 }
-            },
-            {
-                "file": {
-                    "type": "DiskFile",
-                    "path": "source/binToDecV1.luc"
-                }
             }
         ],
         "constraintFiles": [
@@ -67,6 +61,7 @@
                     "path": "Constraints/io.acf"
                 }
             }
-        ]
+        ],
+        "ipCores": []
     }
 }

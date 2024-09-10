@@ -22,7 +22,6 @@ module alchitryTop (
         }
     }
     binToDec binToDecOriginal(#DIGITS(4))
-    binToDecV1 binToDecV1(#DIGITS(4))
     
     always {
         resetCond.in = ~rst_n  // input raw inverted reset signal
@@ -33,7 +32,6 @@ module alchitryTop (
         usbTx = usbRx          // loop serial port
         
         binToDecOriginal.value = 4b0101
-        binToDecV1.value = 4b0111
         
         seg.values={4d4,4d3,4d2,4d1}
         
@@ -44,13 +42,6 @@ module alchitryTop (
             ioLed[0] = binToDecOriginal.digits[0]
             ioLed[1] = binToDecOriginal.digits[1]
             ioLed[2] = binToDecOriginal.digits[2]
-        }
-        
-        if (ioDip[0][1]){
-            seg.values = binToDecV1.digits
-            ioLed[0] = binToDecV1.digits[0]
-            ioLed[1] = binToDecV1.digits[1]
-            ioLed[2] = binToDecV1.digits[2]
         }
         
         

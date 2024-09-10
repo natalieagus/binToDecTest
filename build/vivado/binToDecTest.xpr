@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="65" Path="/media/share/Alchitry/binToDecTest/build/vivado/binToDecTest.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="e595662680b34fb58cb631cf85f7a259"/>
+    <Option Name="Id" Val="0f9ded49c2b347d890b25de49fb614f3"/>
     <Option Name="Part" Val="xc7a35tftg256-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -90,73 +90,64 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/source/MI_binToDecV1_258523be.sv">
+      <File Path="$PSRCDIR/sources_1/imports/source/binToDec.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../source/MI_binToDecV1_258523be.sv"/>
-          <Attr Name="ImportTime" Val="1724226896"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../source/binToDec.sv"/>
+          <Attr Name="ImportTime" Val="1725961494"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/source/MI_binToDec_258523be.sv">
+      <File Path="$PSRCDIR/sources_1/imports/source/counter.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../source/MI_binToDec_258523be.sv"/>
-          <Attr Name="ImportTime" Val="1724226896"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../source/counter.sv"/>
+          <Attr Name="ImportTime" Val="1725961494"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/source/MI_counter_2756ca9f.sv">
+      <File Path="$PSRCDIR/sources_1/imports/source/decoder.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../source/MI_counter_2756ca9f.sv"/>
-          <Attr Name="ImportTime" Val="1724226896"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../source/decoder.sv"/>
+          <Attr Name="ImportTime" Val="1725961494"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/source/MI_decoder_f702a396.sv">
+      <File Path="$PSRCDIR/sources_1/imports/source/multiSevenSeg.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../source/MI_decoder_f702a396.sv"/>
-          <Attr Name="ImportTime" Val="1724226896"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../source/multiSevenSeg.sv"/>
+          <Attr Name="ImportTime" Val="1725961494"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/source/MI_multiSevenSeg_70303e7f.sv">
+      <File Path="$PSRCDIR/sources_1/imports/source/resetConditioner.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../source/MI_multiSevenSeg_70303e7f.sv"/>
-          <Attr Name="ImportTime" Val="1724226896"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../source/resetConditioner.sv"/>
+          <Attr Name="ImportTime" Val="1725961494"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/source/MI_resetConditioner_7ee16669.sv">
+      <File Path="$PSRCDIR/sources_1/imports/source/sevenSeg.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../source/MI_resetConditioner_7ee16669.sv"/>
-          <Attr Name="ImportTime" Val="1724226896"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../source/sevenSeg.sv"/>
+          <Attr Name="ImportTime" Val="1725961494"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/source/MI_sevenSeg.sv">
+      <File Path="$PSRCDIR/sources_1/imports/source/alchitryTop.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../source/MI_sevenSeg.sv"/>
-          <Attr Name="ImportTime" Val="1724226896"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/source/MI_alchitryTop.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../source/MI_alchitryTop.sv"/>
-          <Attr Name="ImportTime" Val="1724226896"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../source/alchitryTop.sv"/>
+          <Attr Name="ImportTime" Val="1725961494"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -164,13 +155,19 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="MI_alchitryTop"/>
+        <Option Name="TopModule" Val="alchitryTop"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
       <File Path="$PPRDIR/../constraint/alchitry.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../constraint/au_props.xdc">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

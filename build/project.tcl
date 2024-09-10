@@ -5,9 +5,9 @@ set device xc7a35tftg256-1
 if {[file exists "$projDir"]} { file delete -force "$projDir" }
 create_project $projName "$projDir" -part $device
 set_property design_mode RTL [get_filesets sources_1]
-set verilogSources [list "/media/share/Alchitry/binToDecTest/build/source/MI_alchitryTop.sv" "/media/share/Alchitry/binToDecTest/build/source/MI_resetConditioner_7ee16669.sv" "/media/share/Alchitry/binToDecTest/build/source/MI_multiSevenSeg_70303e7f.sv" "/media/share/Alchitry/binToDecTest/build/source/MI_counter_2756ca9f.sv" "/media/share/Alchitry/binToDecTest/build/source/MI_sevenSeg.sv" "/media/share/Alchitry/binToDecTest/build/source/MI_decoder_f702a396.sv" "/media/share/Alchitry/binToDecTest/build/source/MI_binToDec_258523be.sv" "/media/share/Alchitry/binToDecTest/build/source/MI_binToDecV1_258523be.sv" ]
+set verilogSources [list "/media/share/Alchitry/binToDecTest/build/source/alchitryTop.sv" "/media/share/Alchitry/binToDecTest/build/source/resetConditioner.sv" "/media/share/Alchitry/binToDecTest/build/source/binToDec.sv" "/media/share/Alchitry/binToDecTest/build/source/sevenSeg.sv" "/media/share/Alchitry/binToDecTest/build/source/multiSevenSeg.sv" "/media/share/Alchitry/binToDecTest/build/source/counter.sv" "/media/share/Alchitry/binToDecTest/build/source/decoder.sv" ]
 import_files -fileset [get_filesets sources_1] -force -norecurse $verilogSources
-set xdcSources [list "/media/share/Alchitry/binToDecTest/build/constraint/alchitry.xdc" ]
+set xdcSources [list "/media/share/Alchitry/binToDecTest/build/constraint/alchitry.xdc" "/media/share/Alchitry/binToDecTest/build/constraint/au_props.xdc" ]
 read_xdc $xdcSources
 set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
 update_compile_order -fileset sources_1
